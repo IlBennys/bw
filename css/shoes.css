@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.logo {
+  width: 85px;
+  box-shadow: 0px 1px 20px 12px rgba(255, 0, 0, 0.2);
+  margin-left: 20px;
+}
+
+#lista-rossa {
+  list-style: none;
+  color: #fd4555;
+  width: 70px;
+  font-size: x-large;
+  text-align: center;
+  box-shadow: -6px 6px 6px 4px rgba(255, 0, 0, 0.2);
+}
+#lista-rossa:hover {
+  cursor: pointer;
+}
+
+#lista-gialla {
+  list-style: none;
+  text-align: center;
+  color: #febb40;
+  width: 70px;
+  font-size: x-large;
+  box-shadow: -6px 6px 6px 4px rgba(255, 221, 0, 0.2);
+}
+#lista-gialla:hover {
+  cursor: pointer;
+}
+
+#listaAdd {
+  list-style: none;
+  font-size: x-large;
+  width: 40px;
+}
+#listaAdd:hover {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+#para {
+  font-size: 300%;
+}
+
+.paragrafoo {
+  font-weight: 600;
+  font-size: xx-large;
+  margin-left: 2%;
+}
+
+.paragrafoSecondo {
+  font-weight: 500;
+  font-size: large;
+  margin-left: 5%;
+}
+
+.spannami {
+  color: #afafaf;
+}
+
+#customRange2 {
+  width: 100%;
+  height: 15%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #febb40;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #181818;
+}
+
+:root,
+[data-bs-theme=light] {
+  --bs-border-radius: 4.375rem;
+}
+
+.card {
+  background-color: #febb40;
+}
+
+.img-fluid {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bi-suit-heart::before {
+  content: "\f59e";
+  font-size: xx-large;
+}
+
+.rosso {
+  color: red;
+}
+
+.bianco {
+  color: white;
+}
+
+.carattereGrande {
+  font-size: xx-large;
+}
+
+#parte-DX {
+  width: 50%;
+}
+
+#parte-SX {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#carouselExample {
+  transform: rotate(90deg);
+}
+
+.mia {
+  transform: rotate(-90deg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 547px;
+}
+
+.misurazioni:hover {
+  transform: scale(1.5);
+  border: 1px solid black;
+  border-radius: 17px;
+  padding: 12px;
+  background-color: red;
+}
+
+#MM {
+  -webkit-animation-name: girotondo;
+          animation-name: girotondo;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  color: #febb40;
+}
+
+@-webkit-keyframes girotondo {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(181deg);
+  }
+}
+
+@keyframes girotondo {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(181deg);
+  }
+}
+.misure:hover {
+  cursor: pointer;
+}
+
+.btn-group {
+  border: 2px solid black;
+}/*# sourceMappingURL=shoes.css.map */

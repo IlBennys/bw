@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/shoes.css" />
+    <title>ORX SITE</title>
+  </head>
+  <body>
+    <!------------- QUESTO E' LA NAVBAR-------------  -->
+
+    <nav
+      class="navbar position-sticky top-0 z-3 border-bottom bg-body-tertiary d-flex flex-column d-md-flex flex-md-row"
+    >
+      <div class="">
+        <span class="navbar-brand mb-0 h1"
+          ><img
+            class="logo rounded-pill rounded-5 px-2"
+            src="./img/376px-Orx-logo.svg.png"
+            alt="logo"
+        /></span>
+      </div>
+      <div>
+        <ul class="flex-column mt-4 d-md-flex flex-md-row mt-lg-0">
+          <li id="lista-rossa" class="mx-4"><i class="bi bi-facebook"></i></li>
+          <li id="lista-rossa" class="mx-4"><i class="bi bi-whatsapp"></i></li>
+          <li id="lista-rossa" class="mx-4"><i class="bi bi-instagram"></i></li>
+          <li id="lista-gialla" class="mx-4">MAN</li>
+          <li id="lista-gialla" class="mx-4 w-auto">WOMAN</li>
+          <li id="lista-gialla" class="mx-4">KIDS</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex-column d-md-flex flex-md-row">
+          <li id="listaAdd" class="mx-0">
+            <i class="bi bi-cart-plus-fill"></i>
+          </li>
+          <li id="listaAdd" class="mx-0"><i class="bi bi-search"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <!------------- QUESTO E' LA PARTE CON TITOLO-------------  -->
+    <div
+      id="totale"
+      class="container-fluid mt-4 px-5 d-flex justify-content-between"
+    >
+      <div id="parte-SX">
+        <div>
+          <p id="para">
+            <span class="bold">SHOES</span><br /><span class="spannami"
+              >COLLECTION</span
+            >
+          </p>
+        </div>
+        <div style="margin-left: 5%">
+          <p class="mt-5 paragrafoo">Price range</p>
+          <p class="paragrafoSecondo">50$-250$</p>
+          <p class="spannami">
+            average price: <span class="bold text-dark">from 120$</span>
+          </p>
+          <!------------- QUESTO E' IL RANGE-------------  -->
+
+          <label for="customRange2" class="form-label"></label>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="4"
+            id="customRange2"
+          />
+        </div>
+        <!------------- QUESTA SONO LE CARD -------------  -->
+        <!------------- QUESTA E' LA 1 CARD -------------  -->
+
+        <div class="card mb-3 mt-5" style="max-width: 400px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./img/adidas.webp"
+                class="img-fluid rounded-start"
+                alt="SCRPA"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title bold">ADIDAS 78PX</h5>
+                <p class="card-text carattereGrande text-decoration-underline">
+                  PRICE 140$
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    ><svg
+                      onclick="heart(event)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-suit-heart-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        id="cuoricino"
+                        class="bianco"
+                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                      />
+                    </svg>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------- QUESTA E' LA 2 CARD -------------  -->
+
+        <div class="card mb-3 mt-5" style="max-width: 400px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./img/runningShoes-basse.jpg"
+                class="img-fluid rounded-start"
+                alt="SCRPA"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title bold">ADIDAS XR200</h5>
+                <p class="card-text carattereGrande text-decoration-underline">
+                  PRICE 200$
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    ><svg
+                      onclick="heartX(event)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-suit-heart-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        id="cuoricinoX"
+                        class="bianco"
+                        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                      />
+                    </svg>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------- QUESTO E' IL CAROSELLO -------------  -->
+
+      <div id="parte-DX">
+        <div id="carouselExample" class="carousel slide p-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/zixer-alta.jpg"
+                class="d-block w-100 mia"
+                alt="shoes-pic"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/adidas.webp"
+                class="d-block w-100 mia"
+                alt="shoes-pic"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/nike-rossa.jfif"
+                class="d-block w-100 mia"
+                alt="shoes-pic"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!------------- QUESTE SONO LE MISURE -------------  -->
+
+        <p id="MM" class="d-flex justify-content-center bold carattereGrande">
+          SIZE
+        </p>
+        <div class="misure d-flex justify-content-around mt-5">
+          <p class="misurazioni z-3">34</p>
+          <p class="misurazioni z-3">36</p>
+          <p class="misurazioni z-3">38</p>
+          <p class="misurazioni z-3">40</p>
+          <p class="misurazioni z-3">42</p>
+        </div>
+
+        <div
+          class="btn-group d-flex z-0"
+          role="group"
+          aria-label="Basic example"
+        >
+          <button type="button" class="btn btn-success">Add to Cart</button>
+          <button type="button" class="btn btn-warning">save</button>
+          <button type="button" class="btn btn-danger">remove from cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!------------- QUESTO E' LO SCRIPT-------------  -->
+    <script src="./shoes-website.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
