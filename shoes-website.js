@@ -1,5 +1,5 @@
 const cuore = document.getElementById("cuoricino")
-console.log(cuore)
+// console.log(cuore)
 const heart = (event) => {
   if (cuore !== null) {
     cuore.classList.toggle("bianco")
